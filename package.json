@@ -1,0 +1,36 @@
+{
+  "name": "applitools_hackathon",
+  "version": "1.0.0",
+  "description": "Applitools Hackathon Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpahuja/applitools_hackathon.git"
+  },
+  "keywords": [
+    "applitools",
+    "applitools",
+    "AI",
+    "visual",
+    "testing",
+    "applitools",
+    "Hackathon"
+  ],
+  "author": "Manoj Pahuja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpahuja/applitools_hackathon/issues"
+  },
+  "homepage": "https://github.com/mpahuja/applitools_hackathon#readme",
+  "dependencies": {
+    "@applitools/eyes-cypress": "^3.8.18",
+    "@cypress/webpack-preprocessor": "^4.1.0",
+    "cypress": "^3.6.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2"
+  }
+}
