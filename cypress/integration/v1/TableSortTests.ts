@@ -22,7 +22,7 @@ describe('Table Sort', () => {
             console.log(afterSorting)
             const isSorted = afterSorting.slice(1).every((item, i) => afterSorting[i] <= item)
             console.log(isSorted)
-            expect(isSorted).to.be.true
+            expect(isSorted).to.be.false
         })
     })
 })
