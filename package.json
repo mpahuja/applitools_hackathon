@@ -4,7 +4,7 @@
   "description": "Applitools Hackathon Project",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "cypress run"
   },
   "repository": {
     "type": "git",
