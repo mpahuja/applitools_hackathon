@@ -1,7 +1,7 @@
 import { fieldsInputOutput } from '../../fixtures/loginData'
-describe('v1 Login Tests', () => {
+describe('v1 Login Tests:', () => {
     it('Verifies all static elements exist on the page', () => {
-        cy.visit('https://demo.applitools.com/hackathon.html#')
+        cy.visit('/hackathon.html#')
         cy.get('img[src="img/logo-big.png"]').should('exist')
         cy.get('img[src="img/social-icons/twitter.png"]').should('exist')
         cy.get('img[src="img/social-icons/facebook.png"]').should('exist')
@@ -11,7 +11,7 @@ describe('v1 Login Tests', () => {
 
     fieldsInputOutput.forEach(fields => {
         it(`Login with Username: ${fields.userName} and ${fields.password}`, () => {
-            cy.visit('https://demo.applitools.com/hackathon.html#')
+            cy.visit('/hackathon.html#')
             cy.reload()
             cy.conditionalType('#username', fields.userName)
             cy.conditionalType('#password', fields.password)
