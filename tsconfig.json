@@ -12,5 +12,6 @@
   "include": [
     // process only spec files
     "**/*.ts"
-  ]
+  ],
+  "files": ["./node_modules/@applitools/eyes-cypress/eyes-index.d.ts"],
 }
