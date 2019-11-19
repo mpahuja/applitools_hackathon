@@ -12,7 +12,7 @@ describe('v1 Canvas Charts', () => {
             .should('be.visible')
             .and(chart => {
                 // we can assert anything about the chart really
-                expect(chart.height()).to.be.greaterThan(470)
+                expect(chart.height()).to.be.greaterThan(450)
               })
     })
 
