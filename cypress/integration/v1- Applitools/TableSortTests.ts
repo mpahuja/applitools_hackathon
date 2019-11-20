@@ -11,13 +11,13 @@ describe('v1 Table Sort:', () => {
         cy.get('#log-in').click()
         cy.eyesCheckWindow({
             tag: "BeforeSorting",
-            sizeMode: "selector",
+            target: "region",
             selector: "#transactionsTable"
         })
         cy.get('#amount').click()
         cy.eyesCheckWindow({
             tag: "AfterSorting",
-            sizeMode: "selector",
+            target: "region",
             selector: "#transactionsTable"
         })
         cy.eyesClose()

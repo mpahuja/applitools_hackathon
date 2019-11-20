@@ -9,7 +9,7 @@ describe('v1 Dynamic Content', () => {
         })
         cy.eyesCheckWindow({
             tag: "Dynamic Area",
-            sizeMode: "selector",
+            target: "region",
             selector: ".element-balances"
         })
         cy.eyesClose()

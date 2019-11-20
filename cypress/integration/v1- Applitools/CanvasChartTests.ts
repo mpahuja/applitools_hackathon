@@ -15,7 +15,7 @@ describe('v1 Canvas Charts', () => {
         })
         cy.eyesCheckWindow({
             tag: "DefaultChart",
-            sizeMode: "selector",
+            target: "region",
             selector: "#canvas"
         })
         cy.eyesClose()
@@ -31,7 +31,7 @@ describe('v1 Canvas Charts', () => {
         })
         cy.eyesCheckWindow({
             tag: "AddedDataset",
-            sizeMode: "selector",
+            target: "region",
             selector: "#canvas"
         })
         cy.eyesClose()
