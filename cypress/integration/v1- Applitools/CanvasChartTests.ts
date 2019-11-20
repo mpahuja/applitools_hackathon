@@ -8,18 +8,33 @@ describe('v1 Canvas Charts', () => {
 
     it('Verifies properties and content of chart', () => {
         cy.visit('/hackathonChart.html')
-        cy.get('#canvas')
-            .should('be.visible')
-            .and(chart => {
-                // we can assert anything about the chart really
-                expect(chart.height()).to.be.greaterThan(450)
-              })
+        cy.eyesOpen({
+            appName: 'Manoj App v1',
+            testName: 'v1 Canvas Default Properties',
+            batchName: 'v1',
+        })
+        cy.eyesCheckWindow({
+            tag: "DefaultChart",
+            sizeMode: "selector",
+            selector: "#canvas"
+        })
+        cy.eyesClose()
     })
 
     it('Verifies content of chart with additional year data', () => {
         cy.visit('/hackathonChart.html')
         cy.get('#addDataset').click()
-        // Purposefully skipped validation of bar charts and value verification
+        cy.eyesOpen({
+            appName: 'Manoj App v1',
+            testName: 'v1 Canvas Added DataSet',
+            batchName: 'v1',
+        })
+        cy.eyesCheckWindow({
+            tag: "AddedDataset",
+            sizeMode: "selector",
+            selector: "#canvas"
+        })
+        cy.eyesClose()
     })
 
 })
