@@ -12,7 +12,6 @@
 // the project's config changing)
 
 const wp = require('@cypress/webpack-preprocessor')
-// require('@applitools/eyes-cypress')(module);
 
 module.exports = (on) => {
   const options = {
@@ -20,3 +19,5 @@ module.exports = (on) => {
   }
   on('file:preprocessor', wp(options))
 }
+
+require('@applitools/eyes-cypress')(module);

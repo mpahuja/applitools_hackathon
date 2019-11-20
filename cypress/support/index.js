@@ -15,7 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 
-// import '@applitools/eyes-cypress/commands'
+import '@applitools/eyes-cypress/commands'
 // type definitions for Cypress object "cy"
 /// <reference types="cypress" />
 import './commands'

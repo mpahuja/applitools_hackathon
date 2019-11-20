@@ -1,3 +1,7 @@
 {
-    "baseUrl": "https://demo.applitools.com"
+    "baseUrl": "https://demo.applitools.com",
+    "viewportWidth": 800,
+    "viewportHeight": 600,
+    "eyesIsDisabled": false,
+    "eyesPort": "80"
 }

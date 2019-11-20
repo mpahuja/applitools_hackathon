@@ -26,11 +26,13 @@
   },
   "homepage": "https://github.com/mpahuja/applitools_hackathon#readme",
   "dependencies": {
-    "@applitools/eyes-cypress": "^3.8.18",
     "@cypress/webpack-preprocessor": "^4.1.0",
     "cypress": "^3.6.0",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.2",
     "webpack": "^4.41.2"
+  },
+  "devDependencies": {
+    "@applitools/eyes-cypress": "^3.8.20"
   }
 }
